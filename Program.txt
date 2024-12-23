@@ -1,0 +1,54 @@
+Docker file(no extension for this file) content and name it as Dockerfile
+FROM python:3.12.4-slim
+WORKDIR /app
+COPY first.py /app/
+CMD ["python", "first.py"]
+
+
+create a python file called first.py
+keep your Docker file and python file in a folder and name it as Docker
+
+open the Docker file and type cmd in the path (it will visible in the above as like a search bar)
+
+do this in command prompt :
+to build image = docker build -t pythonversion-image name(you can give any name for image)
+>>docker build -t python3124-trial .
+>>docker run python3124-trial
+>>docker login
+
+>>docker tag python3124-trial pranesh1000/python3124-trial
+to push = 
+>>docker push pranesh1000/python3124-trial
+to verify = 
+>>docker ps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
